@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GitHub Project Organizer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GitHub Repository URL:"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/etGithubUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="https://github.com/username/repo"
+        android:inputType="textUri"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Name:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MyApp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Package Name:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etPackageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="com.example.myapp"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Android Project"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to create project..."
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:background="#f0f0f0"/>
+    </ScrollView>
+
+</LinearLayout>
